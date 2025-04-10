@@ -1,7 +1,23 @@
 Product Catalog - Fullstack Application
 =======================================
 
-This repository contains a fullstack product listing application that displays products from an external catalog. It is built using **React + Vite** for the frontend and **ASP.NET Core** with a hexagonal architecture for the backend. Docker is used to provide a cross-platform local development environment.
+This project delivers a complete fullstack application for browsing products from an external catalog. It provides a fast, intuitive interface for users, supported by a reliable backend service architecture. The application runs seamlessly in a containerized environment using Docker.
+
+Purpose and Approach
+-----------------------
+
+This exercise demonstrates how a simple feature—browsing products—can be implemented in a way that reflects modern production-level practices. While technical correctness was important, equal focus was placed on clarity, maintainability, and readiness for real-world deployment.
+
+The solution includes:
+
+A React-based frontend for responsive product browsing and search
+
+An ASP.NET Core backend that integrates with a third-party product API and adds caching
+
+Docker-based deployment, ensuring consistency across all operating systems
+
+Observability features like health checks, structured logs, and metrics
+
 
 Motivation and Approach
 -----------------------
