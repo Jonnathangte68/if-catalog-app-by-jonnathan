@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "types": ["vitest", "@testing-library/jest-dom"],
+      "baseUrl": "src",
+      "paths": {
+        "@/*": ["*"]
+      },
+      "target": "ESNext",
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "strict": true,
+      "jsx": "react-jsx",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true
+    },
+    "include": ["src", "cypress"]
+}
+  

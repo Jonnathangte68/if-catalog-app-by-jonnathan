@@ -1,0 +1,15 @@
+[
+    {
+      "id": "1",
+      "title": "Mock Phone",
+      "description": "A mocked product for testing",
+      "price": 99.99
+    },
+    {
+      "id": "2",
+      "title": "Mock Tablet",
+      "description": "Another fake item",
+      "price": 199.99
+    }
+]
+  

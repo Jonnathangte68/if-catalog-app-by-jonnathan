@@ -1,0 +1,6 @@
+@host    = http://localhost:5213
+@version = v1
+
+### Get all products
+GET {{host}}/api/{{version}}/products
+Accept: application/json

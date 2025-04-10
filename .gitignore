@@ -1,0 +1,78 @@
+#
+# General OS/Editor Files
+#
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.bak
+*.pid
+*.seed
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vspscc
+*.vssscc
+
+#
+# IDEs
+#
+.idea/
+.vscode/
+.vs/
+
+#
+# Node & Frontend
+#
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.eslintcache
+/frontend/.vite
+/frontend/.turbo/
+/frontend/test-results/
+/frontend/coverage/
+/frontend/cypress/videos/
+/frontend/cypress/screenshots/
+/frontend/cypress/downloads/
+frontend/tsconfig.tsbuildinfo
+/frontend/package-lock.json
+
+#
+# .NET & Backend
+#
+**/bin/
+**/obj/
+*.pdb
+*.cache
+*.DotSettings
+*.sln.iml
+*.Publish.xml
+/backend/launchSettings.json
+
+#
+# NuGet packages
+#
+packages/
+.nuget/
+
+#
+# Build Artifacts
+#
+build/
+dist/
+coverage/
+
+#
+# Secrets
+#
+*.key
+*.pem
+*.pfx
+*.cert
+*.crt
+*.pub
+.secret
+.env
+.env.*

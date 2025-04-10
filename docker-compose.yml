@@ -1,0 +1,42 @@
+version: '3.9'
+
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:80"
+    networks:
+      - app-network
+
+  backend:
+    build: ./backend
+    ports:
+      - "5213:5213"
+    environment:
+      - ASPNETCORE_URLS=http://+:5213
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
+    networks:
+      - app-network
+
+  healthcheck:
+    image: curlimages/curl:latest
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - >
+        while true;
+        do
+          echo "Pinging Product API health endpoint...";
+          curl -sf http://backend:5213/healthz || echo "Health check failed";
+          sleep 10;
+        done
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+
+networks:
+  app-network:
+    driver: bridge
